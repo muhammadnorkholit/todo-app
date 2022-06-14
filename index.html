@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="side_menu">
+            <div class="header_menu">
+                <div class="logo"><a href="/">logo</a></div>
+                <span class="bars"><i class="fa fa-bars"></i></span>
+            </div>
+            <div class="menu_item">
+                <ul>
+                    <li>
+                        <div class="item"><i class="fa fa-home"></i><span>Home</span></div>
+                    </li>
+                    <li>
+                        <div class="item"><i class="fa far fa-check-circle"></i><span>my task</span></div>
+                    </li>
+                    <li>
+                        <div class="item"><i class="fa far far fa-bell"></i><span>inbox</span></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <header class="header">
+                <h1>Customot Stories</h1>
+                <div class="img-profil">
+                    <img src="/images/profile.jpg" alt="">
+                </div>
+            </header>
+            <div class="setting">
+                <div class="categories">
+                    <span>all</span>
+                    <span>personal</span>
+                    <span>busines</span>
+                </div>
+                <button class="add-cart">
+                    <i class="fa fa-plus"></i>
+                    <span>add cart</span>
+                </button>
+            </div>
+            <div class="todo-content">
+                <div class="todo-item">
+                    <div class="img-profil2">
+                        <img src="/images/profile.jpg" alt="">
+                        <span><i class="fa-solid fa-check-circle"></i></span>
+                    </div>
+                    <div class="todo-detail">
+                        <span class="user">jhon dea</span>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                    <button><i class="fa-solid fa-ellipsis"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="popup">
+        <form action="" method="post" class="form">
+            <h1 class="h1">create cart</h1>
+            <input type="text" name="" placeholder="why is day your task?" id="inputCart">
+            <div class="btn">
+                <button type="submit" class="save"><i class="fa fa-save"></i><span>save</span></button>
+                <button type="button" class="cancel"><i class="fa fa-close"></i><span>cancel</span></button>
+
+            </div>
+        </form>
+    </div>
+
+    <script src="jQuery.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
