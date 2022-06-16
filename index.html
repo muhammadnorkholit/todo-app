@@ -26,7 +26,8 @@
                         <div class="item"><i class="fa fa-home"></i><span>Home</span></div>
                     </li>
                     <li>
-                        <div class="item"><i class="fa far fa-check-circle"></i><span>my task</span></div>
+                        <div class="item"><i class="fa far fa-check-circle"></i><span>my
+                                task</span></div>
                     </li>
                     <li>
                         <div class="item"><i class="fa far far fa-bell"></i><span>inbox</span></div>
@@ -36,16 +37,26 @@
         </div>
         <div class="main">
             <header class="header">
-                <h1>Customot Stories</h1>
-                <div class="img-profil">
-                    <img src="/images/profile.jpg" alt="">
+                <h1>helo, <input type="text" name="" autocomplete="off" id="username"></h1>
+                <div class="img-profil" onClick="updateImage(this)">
+                    <img src="images/profile.jpg" alt="">
+                    <div class="container-image">
+                        <label for="image-profile">
+                            <div class="popup-image">
+                                <img class="img-popup" src="images/profile.jpg" alt="">
+                                <form action="" enctype="multipart/form-data" onclick="">
+                                    <input type="file" name="" id="image-profile">
+                                </form>
+                            </div>
+                        </label>
+                    </div>
                 </div>
             </header>
             <div class="setting">
                 <div class="categories">
-                    <span>all</span>
-                    <span>personal</span>
-                    <span>busines</span>
+                    <span class="active" id="all">all</span>
+                    <span class="" id="cat-personal">personal</span>
+                    <span class="" id="cat-business">business</span>
                 </div>
                 <button class="add-cart">
                     <i class="fa fa-plus"></i>
@@ -53,7 +64,8 @@
                 </button>
             </div>
             <div class="todo-content">
-                <div class="todo-item">
+
+                <!-- <div class="todo-item">
                     <div class="img-profil2">
                         <img src="/images/profile.jpg" alt="">
                         <span><i class="fa-solid fa-check-circle"></i></span>
@@ -63,16 +75,40 @@
                         <p>Lorem ipsum dolor sit amet consectetur.</p>
                     </div>
                     <button><i class="fa-solid fa-ellipsis"></i></button>
-                </div>
+                    <div class="set">
+                        <button id="edit"><i class="fa fa-edit"></i><span>edit</span></button>
+                        <button id="remove"><i class="fa fa-trash"></i><span>remove</span></button>
+                    </div>
+                </div> -->
             </div>
+
+            <!-- <i class="fa fas fa-circle-notch"></i> -->
+
         </div>
     </div>
+
 
 
     <div class="popup">
         <form action="" method="post" class="form">
             <h1 class="h1">create cart</h1>
             <input type="text" name="" placeholder="why is day your task?" id="inputCart">
+            <div class="checked-category">
+                <label for="personal">
+                    <div class="personal">
+                        <input type="radio" name="category" value="personal" id="personal">
+                        <span class="bubles"></span>
+                        <span>personal</span>
+                    </div>
+                </label>
+                <label for="business">
+                    <div class="business">
+                        <input type="radio" name="category" value="business" id="business">
+                        <span class="bubles"></span>
+                        <span>business</span>
+                    </div>
+                </label>
+            </div>
             <div class="btn">
                 <button type="submit" class="save"><i class="fa fa-save"></i><span>save</span></button>
                 <button type="button" class="cancel"><i class="fa fa-close"></i><span>cancel</span></button>
